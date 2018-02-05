@@ -1,0 +1,84 @@
+img {
+  margin: 40px;
+  padding: 30px;
+  height: 200px;
+  width: auto;
+  border: solid black;
+}
+
+.bar {
+  width: 100%;
+  height: 60px;
+  background-color: darkgray;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  position: relative;
+  top: 20px;
+}
+
+.hover:hover {
+  border-radius: 50%;
+}
+
+.hover:active {
+  border-radius: 50%;
+}
+
+.hover:active ~ .bar .square{
+  margin-left: 1300px;
+  animation: backwards-square-translate 5s linear 0s 1 normal forwards;
+}
+
+.active:active {
+  opacity: 0.3;
+}
+
+.focus:focus {
+  filter: grayscale(100%);
+}
+
+.square:focus {
+  animation: square-translate 5s linear 0s 1 normal forwards;
+}
+
+.square:active {
+  animation: square-color 5s linear 0s 1 normal forwards;
+}
+
+@keyframes square-translate {
+  from {
+    ...
+  }
+  to {
+    transform: translateX(1300px)
+  }
+}
+
+@keyframes backwards-square-translate {
+  from {
+    ...
+  }
+  to {
+    transform: translateX(-1300px)
+  }
+}
+
+@keyframes square-color {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: red;
+    transform: rotate(405deg)
+  }
+  51% {
+    background-color: blue;
+  }
+  100% {
+    transform: translateX(1300px);
+  }
+}
