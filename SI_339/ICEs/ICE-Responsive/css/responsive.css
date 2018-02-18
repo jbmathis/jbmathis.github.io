@@ -1,0 +1,56 @@
+/* Midsize view */
+@media only screen and (min-width: 650px) {
+  /* Fix navbar */
+  .top-nav ul {
+    text-align: center;
+  }
+
+  .top-nav ul li {
+    display: inline-block;
+  }
+  /* Fix home page box position */
+  .main-content-home {
+  margin-top: 100px;
+}
+
+  /* Fix images page  */
+  .half {
+    display: inline-block;
+    width: 47%;
+  }
+}
+
+/* Large view */
+@media only screen and (min-width: 1000px) {
+  /* Fix navbar */
+  .top-nav .logo {
+    display: inline-block;
+    margin-left: 0;
+  }
+
+  .top-nav ul {
+    display: inline-block;
+    position: fixed;
+    right: 0px;
+    top: 9px;
+  }
+
+  .top-nav ul li {
+    border: none;
+  }
+
+  /* Fix home page box position */
+  .main-content-home {
+    margin-top: 60px;
+  }
+
+  /* Fix images layout */
+  .photo-cell {
+    display: inline-block;
+    width: 47%;
+  }
+
+  .half {
+    width: 22.25%;
+  }
+}
