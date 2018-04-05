@@ -6622,7 +6622,8 @@ div.caption {
   background-color: #483763;
   border: 1px solid #483763;
   border-radius: 5px;
-  padding: 0.25rem 0.5rem; }
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 1rem; }
 
 #resume-text {
   text-align: center; }
