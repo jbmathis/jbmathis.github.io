@@ -6513,7 +6513,8 @@ header p {
   color: #483763;
   margin-top: 15px;
   margin-bottom: auto;
-  margin-left: 20px; }
+  margin-left: 20px;
+  visibility: hidden; }
 
 .navbar-light .navbar-nav {
   margin-top: 10px; }
@@ -6646,7 +6647,8 @@ footer.fixed-bottom a.button:hover {
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   header p {
     font-size: 34px;
-    margin-top: 15px; }
+    margin-top: 15px;
+    visibility: visible; }
 
   #about_text {
     font-size: 14px; }
