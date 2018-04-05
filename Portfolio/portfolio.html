@@ -12,24 +12,23 @@
     <link type="text/css" rel="stylesheet" href="css/main.css">
 
     <title>Jessica Mathis Portfolio</title>
+    <!-- Javascript functions -->
+    <script type="text/javascript">
+      function showMore(project){
+        project.style.background = "#C4A6CF";
+        project.getElementsByTagName("img")[0].style.visibility="hidden";
+        project.getElementsByClassName('caption')[0].style.visibility="visible";
+        project.getElementsByClassName('project-details')[0].style.visibility="visible";
+      }
+
+      function unDo(project){
+        project.style.background = "#E9ECEF";
+        project.getElementsByClassName('caption')[0].style.visibility="hidden";
+        project.getElementsByTagName("img")[0].style.visibility="visible";
+        project.getElementsByClassName('project-details')[0].style.visibility="hidden";
+      }
+    </script>
   </head>
-
-  <script type="text/javascript">
-    function showMore(project){
-      project.style.background = "#C4A6CF";
-      project.getElementsByTagName("img")[0].style.visibility="hidden";
-      project.getElementsByClassName('caption')[0].style.visibility="visible";
-      project.getElementsByClassName('project-details')[0].style.visibility="visible";
-    }
-
-    function unDo(project){
-      project.style.background = "#E9ECEF";
-      project.getElementsByClassName('caption')[0].style.visibility="hidden";
-      project.getElementsByTagName("img")[0].style.visibility="visible";
-      project.getElementsByClassName('project-details')[0].style.visibility="hidden";
-    }
-  </script>
-
   <body>
     <header class="fixed-top">
       <div class="container-fluid">
@@ -67,7 +66,7 @@
           <h5>Data Driven Detroit Toolbox</h5>
           <h6>UX Researcher and Designer</h6>
           <img src="images/Data-Driven-Detroit.jpg" class="img-fluid project-photo"
-           alt="A semester-long capstone project aimed at redesigning the data resources
+           alt="A semester-long project aimed at redesigning the toolbox
            page on Data Driven Detroit's Website.">
            <div class="caption"><br>A semester-long capstone project aimed at redesigning the data resources
            page on Data Driven Detroit's Website by creating an interactive prototype.</div>
@@ -112,7 +111,7 @@
           <h5>MBus Mobile App</h5>
           <h6>Usability Researcher</h6>
           <img src="images/MBus.png" class="img-fluid project-photo"
-           alt="A semester-long research project where I, along with a team, conducted research on the MBus mobile app.">
+           alt="A semester-long research project where I conducted research on the MBus mobile app.">
            <div class="caption"><br>A semester-long research project where I, along with a team of 3 others,
              conducted research on the MBus mobile app to suggest improvements.</div>
            <a class="project-details" href="project.html" alt="Click to Learn More about Jessica's MBus Research Project">Details</a>
