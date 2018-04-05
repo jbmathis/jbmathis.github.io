@@ -6616,6 +6616,20 @@ div.caption {
   margin: 0 auto;
   text-align: center; }
 
+#download-resume {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: white;
+  background-color: #483763;
+  border: 1px solid #483763;
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem; }
+
+p.resume {
+  text-align: center; }
+
+form {
+  text-align: center; }
+
 footer.fixed-bottom {
   background-color: #F4EFF6;
   border-top: 2px solid #C4A6CF; }
@@ -6654,7 +6668,7 @@ footer.fixed-bottom a.button:hover {
     left: 39%; } }
 @media only screen and (min-width: 992px) {
   .project-details {
-    left: 35.5%; }
+    left: 40%; }
 
   header p {
     font-size: 34px; } }

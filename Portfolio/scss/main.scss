@@ -151,6 +151,24 @@ div.caption {
   text-align: center;
 }
 
+//Resume page
+#download-resume {
+  font-family: $portfolio-font;
+  color: white;
+  background-color: $purple;
+  border: 1px solid $purple;
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem;
+}
+
+p.resume {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
 //Footer
 footer.fixed-bottom {
   background-color: $opaque-light-purple;
@@ -198,10 +216,10 @@ footer.fixed-bottom a.button:hover {
       left: 39%;
     }
 }
-
+//large viewport
 @media only screen and (min-width: 992px){
     .project-details {
-      left: 35.5%;
+      left: 40%;
     }
     header p {
       font-size: 34px;
