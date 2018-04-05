@@ -22,7 +22,7 @@ header .container-fluid {
 }
 // my name in header
 header p {
-  font-size: 34px;
+  font-size: 30px;
   font-family: $portfolio-font;
   font-weight: bold;
   color: $purple;
@@ -189,7 +189,7 @@ footer.fixed-bottom a.button:hover {
 //change "Jessica Mathis" to be smaller for midsize screen
 @media only screen and (min-width: 768px) and (max-width: 992px){
     header p {
-      font-size: 30px;
+      font-size: 34px;
       margin-top: 15px;
     }
     #about_text {

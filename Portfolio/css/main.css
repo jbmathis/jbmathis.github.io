@@ -6507,7 +6507,7 @@ header .container-fluid {
   border-bottom: 2px solid #C4A6CF; }
 
 header p {
-  font-size: 34px;
+  font-size: 30px;
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: bold;
   color: #483763;
@@ -6645,7 +6645,7 @@ footer.fixed-bottom a.button:hover {
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   header p {
-    font-size: 30px;
+    font-size: 34px;
     margin-top: 15px; }
 
   #about_text {
