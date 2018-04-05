@@ -6645,8 +6645,7 @@ footer.fixed-bottom a.button:hover {
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   header p {
-    font-size: 34px;
-    margin-top: 15px; }
+    font-size: 34px; }
 
   #about_text {
     font-size: 14px; }
@@ -6655,6 +6654,9 @@ footer.fixed-bottom a.button:hover {
     left: 39%; } }
 @media only screen and (min-width: 992px) {
   .project-details {
-    left: 35.5%; } }
+    left: 35.5%; }
+
+  header p {
+    font-size: 34px; } }
 
 /*# sourceMappingURL=main.css.map */
