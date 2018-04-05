@@ -5,11 +5,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
     <!-- Bootstrap CSS -->
     <link type="text/css" rel="stylesheet" href="css/main.css">
 
     <title>Jessica Mathis Portfolio</title>
   </head>
+
+  <script type="text/javascript">
+    function showMore(project){
+      project.style.background = "#C4A6CF";
+      project.getElementsByTagName("img")[0].style.visibility="hidden";
+      project.getElementsByClassName('caption')[0].style.visibility="visible";
+      project.getElementsByClassName('project-details')[0].style.visibility="visible";
+    }
+
+    function unDo(project){
+      project.style.background = "#E9ECEF";
+      project.getElementsByClassName('caption')[0].style.visibility="hidden";
+      project.getElementsByTagName("img")[0].style.visibility="visible";
+      project.getElementsByClassName('project-details')[0].style.visibility="hidden";
+    }
+  </script>
+
   <body>
     <header class="fixed-top">
       <div class="container-fluid">
@@ -38,6 +58,64 @@
         </div>
       </div>
     </header>
+    <h4>Portfolio</h4>
+    <div class="container">
+      <div class="row justify-content-around">
+        <!-- Data Driven Detroit Project -->
+        <div class="col-xs-10 col-md-5 col-lg-3 project"
+          onmouseover = "showMore(this)" onmouseleave = "unDo(this)">
+          <h5>Data Driven Detroit Toolbox</h5>
+          <h6>UX Researcher and Designer</h6>
+          <img src="images/Data-Driven-Detroit.jpg" class="img-fluid project-photo"
+           alt="A semester-long capstone project aimed at redesigning the data resources
+           page on Data Driven Detroit's Website.">
+           <div class="caption"><br>A semester-long capstone project aimed at redesigning the data resources
+           page on Data Driven Detroit's Website by creating an interactive prototype.</div>
+           <a class="project-details" href="project.html" alt="Click to Learn More about Jessica's Data Driven Detroit Project">Details</a>
+        </div>
+        <!-- AutoMate -->
+        <div class="col-xs-10 col-md-5 col-lg-3 project"
+          onmouseover = "showMore(this)" onmouseleave = "unDo(this)">
+          <h5>AutoMate</h5>
+          <h6>UX Designer</h6>
+          <img src="images/AutoMate.jpg" class="img-fluid project-photo"
+           alt="A semester-long capstone project aimed at designing an interface for an autonomous car.">
+           <div class="caption"><br>A semester-long design project aimed at designing an interface
+           for an autonomous car. The project involved ideation, storyboarding, and low/hi-fi prototyping.</div>
+           <a class="project-details" href="project.html" alt="Click to Learn More about Jessica's AutoMate Project">Details</a>
+        </div>
+        <!-- GM Internship -->
+        <div class="col-xs-10 col-md-5 col-lg-3 project"
+          onmouseover = "showMore(this)" onmouseleave = "unDo(this)">
+          <h5>GM Market Research Tool</h5>
+          <h6>Summer 2017 Intern</h6>
+          <img src="images/GM_Logo.png" class="img-fluid project-photo"
+           alt="A semester-long capstone project aimed at designing an interface for an autonomous car.">
+           <div class="caption"><br>Redesigned a tool for product managers that is used to assess customer
+             satisfaction with their cars.</div>
+           <a class="project-details" href="project.html" alt="Click to Learn More about Jessica's AutoMate Project">Details</a>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+      </div>
+    </div>
+    <footer class="fixed-bottom">
+      <div class="container-fluid">
+        <div class="row">
+          <span>
+            <a id="email" class="button" href="contact.html" alt="Contact me through email">
+              <i class="far fa-envelope"></i>
+            </a>
+            <a id="LinkedIn" class="button" href="https://www.linkedin.com/in/jessica-mathis/" alt="Link to Jessica Mathis' LinkedIn Page">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </span>
+        </div>
+        <div class="row">
+          <p><i class="far fa-copyright"></i> Jessica Mathis 2018</p>
+        </div>
+      </div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

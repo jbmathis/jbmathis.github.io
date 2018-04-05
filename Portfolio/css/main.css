@@ -6491,7 +6491,8 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 body {
-  padding-top: 90px; }
+  padding-top: 90px;
+  padding-bottom: 90px; }
 
 p {
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -6499,7 +6500,7 @@ p {
   font-size: 16px; }
 
 header .container-fluid {
-  background-color: white;
+  background-color: #F4EFF6;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
@@ -6544,12 +6545,116 @@ h4 {
 #prof_photo {
   margin-bottom: 10px; }
 
+h5 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #483763;
+  display: inline-block;
+  margin: 0.35rem auto; }
+
+h5:after {
+  content: ' ';
+  display: block;
+  border: 0.5px solid black;
+  border-radius: 4px; }
+
+h6 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: black;
+  text-align: center;
+  font-weight: 400; }
+
+.project {
+  border: 1px solid #483763;
+  background-color: #e9ecef;
+  text-align: center;
+  box-shadow: 5px 5px 8px darkgray;
+  margin-bottom: 1.5rem; }
+
+div.caption {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 350;
+  visibility: hidden;
+  position: absolute;
+  padding: 0 0.25rem;
+  top: 25%;
+  right: 0.5%; }
+
+.project-photo {
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem; }
+
+.project-details {
+  visibility: hidden;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #483763;
+  background-color: white;
+  border: 1px solid #483763;
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem;
+  position: absolute;
+  top: 80%;
+  left: 43.5%; }
+
+.project-details:hover {
+  text-decoration: none;
+  color: #483763;
+  background-color: lightgray; }
+
+#back {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #483763;
+  background-color: white;
+  border: 1px solid #483763;
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem;
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center; }
+
+footer.fixed-bottom {
+  background-color: #F4EFF6;
+  border-top: 2px solid #C4A6CF; }
+
+footer.fixed-bottom p {
+  margin: 0 auto;
+  color: #483763; }
+
+footer.fixed-bottom span {
+  margin: 0.75rem auto; }
+
+footer.fixed-bottom a.button {
+  border: 1px solid #483763;
+  border-radius: 50px;
+  background-color: white;
+  color: #483763;
+  margin: 0 1rem; }
+
+footer.fixed-bottom a.button:hover {
+  background-color: #C4A6CF; }
+
+#email {
+  padding: 0.45rem 0.35rem 0.45rem 0.65rem; }
+
+#LinkedIn {
+  padding: 0.45rem 0.7rem 0.45rem 0.7rem; }
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   header p {
     font-size: 30px;
-    margin-top: 15px; } }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+    margin-top: 15px; }
+
   #about_text {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .project-details {
+    left: 39%; } }
+@media only screen and (min-width: 992px) {
+  .project-details {
+    left: 35.5%; } }
 
 /*# sourceMappingURL=main.css.map */
