@@ -152,7 +152,7 @@ div.caption {
 }
 
 //Resume page
-#download-resume {
+.download-submit {
   font-family: $portfolio-font;
   color: white;
   background-color: $purple;
@@ -166,8 +166,38 @@ div.caption {
   text-align: center;
 }
 
-form {
+#resume-form {
   text-align: center;
+}
+
+//Contact page
+.form-text {
+  color: $purple;
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+form input[type=text] {
+  margin-bottom: 0.5rem;
+  width: 60vw;
+  display: block;
+}
+
+#contact-form-div {
+  background-image: url("../images/texture_background.jpg");
+  background-size: contain;
+}
+
+#messagebox {
+  width: 60vw;
+  height: 25vh;
+}
+
+.button-holder {
+  text-align: center;
+  margin-top: 1rem;
 }
 
 //Footer
@@ -205,16 +235,21 @@ footer.fixed-bottom a.button:hover {
   padding: 0.45rem 0.7rem 0.45rem 0.7rem;
 }
 
-//change "Jessica Mathis" to be smaller for midsize screen
+//change "Jessica Mathis" and about text to be smaller for midsize screen
 @media only screen and (min-width: 768px) and (max-width: 992px){
     header p {
-      font-size: 34px;
+      font-size: 32px;
     }
     #about_text {
       font-size: 14px;
     }
     .project-details {
       left: 39%;
+    }
+    form input[type=text] {
+      display: inline;
+      width: 40vw;
+      margin-top: 0.5rem;
     }
 }
 //large viewport
@@ -224,5 +259,10 @@ footer.fixed-bottom a.button:hover {
     }
     header p {
       font-size: 34px;
+    }
+    form input[type=text] {
+      display: block;
+      width: 40vw;
+      margin-top: 0.05rem;
     }
 }
