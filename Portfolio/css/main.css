@@ -6657,7 +6657,7 @@ form input[type=text] {
   height: 10vh; }
 
 .button-holder a {
-  vertical-align: middle; }
+  margin-top: 0.5rem; }
 
 .button-holder a:hover {
   color: lightgray;
