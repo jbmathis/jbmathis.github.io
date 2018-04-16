@@ -2,24 +2,33 @@
   margin: 0;
 }
 
+body {
+  background-image: url("../images/light-veneer.png");
+  background-size: contain;
+}
+
 .grid-container {
   display: grid;
   grid-gap: 0;
   grid-template-columns: 50% 50%;
   overflow: hidden;
   width: 100%;
+  justify-content: center;
+
 }
 
 .grid-item-1 {
+  display: flex;
   grid-column: 1 / 2;
 }
 
 .grid-item-2 {
+  display: flex;
   grid-column: 2 / 3;
 }
 
 img {
   border: 5px solid blue;
   padding: 5%;
-  width: 89%;
+  width: 88.5%;
 }

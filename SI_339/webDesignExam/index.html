@@ -8,13 +8,16 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
   <script type="text/javascript">
-    function disappear() {
-      document.getElementById("BigHouse").style.visibility = "hidden";
-      document.getElementById("Greeting").innerHTML = "Yay JavaScript!";
+    function hideImage() {
+      document.getElementById("Colleen").style.display = "none";
+			var container = document.getElementById("container");
+			container.style.gridTemplateColumns = "auto";
     }
-    function unDo() {
-      document.getElementById("BigHouse").style.visibility = "visible";
-      document.getElementById("Greeting").innerHTML = "Hello World";
+
+    function showImage() {
+      document.getElementById("Colleen").style.display = "inline-block";
+			var container = document.getElementById("container");
+			container.style.gridTemplateColumns = "50% 50%";
     }
   </script>
 </head>
@@ -22,7 +25,8 @@
   <header>
     <h1>Jessica Mathis</h1>
   </header>
-	<div class="grid-container">
+	<br>
+	<div id="container" class="grid-container">
 		<div class="grid-item-1">
 			<img id="Colleen" src="images/examPic.JPG" alt="Colleen with friends"></img>
 		</div>
@@ -30,6 +34,7 @@
   		<img id="UMSI" class="grid-item-2" src="images/UMSI-logo.jpg" alt="School of Information logo"></img>
 		</div>
 	</div>
+	<br>
   <input type="button" name="Hide" Value="Hide Image" onclick="hideImage()">
 	<input type="button" name="Show" Value="Show Image" onclick="showImage()">
 </body>
