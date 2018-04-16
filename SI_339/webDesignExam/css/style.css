@@ -1,9 +1,9 @@
-/* body {
+body {
   background-image: url("../images/texture_background.jpg");
   background-size: contain;
 }
 
-img {
+/* img {
   width: 75%;
   height: 75%;
   display: block;
@@ -21,7 +21,7 @@ div {
 
 .formatting {
   background-color: lightblue;
-} */
+}  */
 
 /* @media only screen and (min-width: 768px) {
   h1 {
