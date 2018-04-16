@@ -1,0 +1,45 @@
+/* body {
+  background-image: url("../images/texture_background.jpg");
+  background-size: contain;
+}
+
+img {
+  width: 75%;
+  height: 75%;
+  display: block;
+  margin: 0 auto;
+}
+
+div {
+  color: black;
+  background-color: white;
+  height: 3rem;
+  margin: 1rem auto 0 auto;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.formatting {
+  background-color: lightblue;
+} */
+
+/* @media only screen and (min-width: 768px) {
+  h1 {
+    font-family: Helvetica;
+    color: white;
+  }
+  .formatting {
+    display: inline-block;
+    width: 49.5%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-family: Arial;
+    color: blue;
+  }
+  .formatting {
+    width: 33%;
+  }
+} */

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Jessica's Exam Site</title>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--Style-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script type="text/javascript">
+    function disappear() {
+      document.getElementById("BigHouse").style.visibility = "hidden";
+      document.getElementById("Greeting").innerHTML = "Yay JavaScript!";
+    }
+    function unDo() {
+      document.getElementById("BigHouse").style.visibility = "visible";
+      document.getElementById("Greeting").innerHTML = "Hello World";
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Jessica Mathis</h1>
+  </header>
+	<img id="Colleen" src="images/examPic.JPG" alt="Colleen with friends"></img>
+  <img id="UMSI" src="images/UMSI-logo.jpg" alt="School of Information logo"></img>
+  <input type="button" name="Hide" Value="Hide Image" onclick="hideImage()">
+	<input type="button" name="Show" Value="Show Image" onclick="showImage()">
+</body>
+</html>
