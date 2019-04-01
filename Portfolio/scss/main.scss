@@ -1,5 +1,10 @@
-
 @import "bootstrap/bootstrap.scss";
+
+body {
+  background:url("../images/ux_desk.jpg") fixed center no-repeat;
+  height: 100%;
+  background-size: cover;
+}
 
 //offset body from the fixed header
 body {
