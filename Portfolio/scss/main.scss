@@ -1,78 +1,83 @@
 @import "bootstrap/bootstrap.scss";
 
+//offset body from the fixed header. default font for header
 body {
-  background:url("../images/ux_desk.jpg") fixed center no-repeat;
-  height: 100%;
-  background-size: cover;
-}
-
-//offset body from the fixed header
-body {
-  padding-top: 90px;
+  padding-top: 70px;
   padding-bottom: 90px;
+  font-family: $portfolio-font;
+  font-weight: 300;
 }
 //regular text
 p {
-  font-family: $portfolio-font;
-  font-weight: 325;
-  font-size: 16px;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: $dark-gray;
 }
 // header styles
 header .container-fluid {
-  background-color: $opaque-light-purple;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 2px;
   padding-left: 20px;
-  border-bottom: 2px solid $light-purple;
+  // border-bottom: 1px solid $blue;
+  background-color: white;
 }
 // my name in header
 header p {
-  font-size: 26px;
+  font-size: 24px;
   font-family: $portfolio-font;
-  font-weight: bold;
-  color: $purple;
-  margin-top: 15px;
+  color: $blue;
+  margin-top: auto;
   margin-bottom: auto;
   margin-left: 20px;
 }
 // navbar
 .navbar-light .navbar-nav {
-  margin-top: 10px;
+  margin-top: auto;
 }
-// other pages in nav
+// other page in nav, not current one
 .navbar-light .navbar-nav .nav-link{
-  font-size: 20px;
-  color: $purple;
+  font-size: 22px;
+  color: $dark-gray;
   text-align: center;
 }
-//color for other pages when hovered
+// color for other pages when hovered
 .navbar-light .navbar-nav .nav-link:hover {
-  color: $light-purple;
+  color: $blue;
 }
 //current page in nav
 .navbar-light .navbar-nav .nav-link.active .nav-text {
-  border: 1px solid $purple;
-  border-radius: 10px;
-  padding: 0.5rem 1rem;
-  color: $purple;
-  font-weight: bold;
+  color: $dark-gray;
+}
+
+.navbar-light .navbar-nav .nav-link.active .nav-text:after {
+    content:' ';
+    display: block;
+    border: 1px solid $blue;
+    border-radius: 4px;
 }
 //hamburger menu icon
 .navbar-light .navbar-toggler {
   border-color: $purple;
 }
 //page title
-h4 {
+h1, h3 {
   font-family: $portfolio-font;
-  color: $purple;
+  font-weight: 300;
+  color: $dark-gray;
   text-align: center;
-  margin: 1rem auto;
+  margin: 0rem auto 1.5rem auto;
 }
-//Home page
+//accent word in page heading
+.accentText {
+  color: $blue;
+}
+//Professional headshot
 #prof_photo {
-  margin-bottom: 10px;
+  border-radius: 50%;
+  max-height: 20rem;
+  max-width: 75%;
+  display: block;
+  margin: 0 auto;
 }
-
 //Portfolio page
 h5 {
   font-family: $portfolio-font;
@@ -164,15 +169,17 @@ div.caption {
   border: 1px solid $purple;
   border-radius: 5px;
   padding: 0.25rem 0.5rem;
-  margin-bottom: 1rem;
+  margin: 3rem 0;
 }
-
+//text within button for resume
 #resume-text {
   text-align: center;
 }
-
+//resume button on home page
 #resume-form {
   text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 
 //Contact page
@@ -217,13 +224,14 @@ form input[type=text] {
 
 //Footer
 footer.fixed-bottom {
-  background-color: $opaque-light-purple;
-  border-top: 2px solid $light-purple;
+  background-color: white;
+  // border-top: 1px solid $blue;
 }
 
 footer.fixed-bottom p {
   margin: 0 auto;
-  color: $purple;
+  font-family: $portfolio-font;
+  color: $dark-gray;
 }
 
 footer.fixed-bottom span {
@@ -253,10 +261,10 @@ footer.fixed-bottom a.button:hover {
 //change "Jessica Mathis" and about text to be smaller for midsize screen
 @media only screen and (min-width: 768px) and (max-width: 992px){
     header p {
-      font-size: 32px;
+      font-size: 28px;
     }
     #about_text {
-      font-size: 14px;
+      // font-size: 14px;
     }
     .project-details {
       left: 39%;
@@ -273,7 +281,7 @@ footer.fixed-bottom a.button:hover {
       left: 40%;
     }
     header p {
-      font-size: 34px;
+      font-size: 28px;
     }
     form input[type=text] {
       display: block;
