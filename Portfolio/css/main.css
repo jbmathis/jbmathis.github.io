@@ -6541,7 +6541,12 @@ h1, h3 {
   font-family: "Helvetica Neue", sans-serif, Arial;
   font-weight: 300;
   color: #404040;
-  text-align: center;
+  text-align: center; }
+
+h1 {
+  margin: 1.5rem auto 2.5rem auto; }
+
+h3 {
   margin: 0rem auto 1.5rem auto; }
 
 .accentText {
@@ -6553,6 +6558,13 @@ h1, h3 {
   max-width: 75%;
   display: block;
   margin: 0 auto; }
+
+#prof_photo_div {
+  border-right: 2px solid #5D64B6;
+  height: 330px; }
+
+#about_text {
+  margin-left: 3.25rem; }
 
 h5 {
   font-family: "Helvetica Neue", sans-serif, Arial;
@@ -6627,9 +6639,10 @@ div.caption {
 
 .download-submit {
   font-family: "Helvetica Neue", sans-serif, Arial;
-  color: white;
-  background-color: #483763;
-  border: 1px solid #483763;
+  font-size: 18px;
+  color: #fff;
+  background-color: #5D64B6;
+  border: 1px solid #5D64B6;
   border-radius: 5px;
   padding: 0.25rem 0.5rem;
   margin: 3rem 0; }
@@ -6637,13 +6650,8 @@ div.caption {
 #resume-text {
   text-align: center; }
 
-#resume-form {
-  text-align: center;
-  display: block;
-  margin: 0 auto; }
-
 .form-text {
-  color: #483763;
+  color: #5D64B6;
   display: inline-block;
   font-weight: bold;
   margin-bottom: 0.25rem;
@@ -6653,14 +6661,6 @@ form input[type=text] {
   margin-bottom: 0.5rem;
   width: 60vw;
   display: block; }
-
-#contact-form-div {
-  background-image: url("../images/texture_background.jpg");
-  background-size: contain; }
-
-#messagebox {
-  width: 60vw;
-  height: 25vh; }
 
 .button-holder {
   text-align: center;

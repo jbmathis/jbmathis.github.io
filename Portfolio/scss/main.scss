@@ -47,7 +47,7 @@ header p {
 .navbar-light .navbar-nav .nav-link.active .nav-text {
   color: $dark-gray;
 }
-
+//line that shows under current page
 .navbar-light .navbar-nav .nav-link.active .nav-text:after {
     content:' ';
     display: block;
@@ -64,6 +64,13 @@ h1, h3 {
   font-weight: 300;
   color: $dark-gray;
   text-align: center;
+}
+//main heading on home page
+h1 {
+  margin: 1.5rem auto 2.5rem auto;
+}
+//portfolio heading
+h3 {
   margin: 0rem auto 1.5rem auto;
 }
 //accent word in page heading
@@ -77,6 +84,14 @@ h1, h3 {
   max-width: 75%;
   display: block;
   margin: 0 auto;
+}
+// vertical line between photo and text on home
+#prof_photo_div {
+  border-right: 2px solid $blue;
+  height: 330px;
+}
+#about_text {
+  margin-left: 3.25rem;
 }
 //Portfolio page
 h5 {
@@ -161,12 +176,13 @@ div.caption {
   text-align: center;
 }
 
-//Resume page
+//view resume button
 .download-submit {
   font-family: $portfolio-font;
-  color: white;
-  background-color: $purple;
-  border: 1px solid $purple;
+  font-size: 18px;
+  color: $white;
+  background-color: $blue;
+  border: 1px solid $blue;
   border-radius: 5px;
   padding: 0.25rem 0.5rem;
   margin: 3rem 0;
@@ -175,48 +191,28 @@ div.caption {
 #resume-text {
   text-align: center;
 }
-//resume button on home page
-#resume-form {
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-}
 
 //Contact page
 .form-text {
-  color: $purple;
+  color: $blue;
   display: inline-block;
   font-weight: bold;
   margin-bottom: 0.25rem;
   margin-right: 0.25rem;
 }
-
 form input[type=text] {
   margin-bottom: 0.5rem;
   width: 60vw;
   display: block;
 }
-
-#contact-form-div {
-  background-image: url("../images/texture_background.jpg");
-  background-size: contain;
-}
-
-#messagebox {
-  width: 60vw;
-  height: 25vh;
-}
-
 .button-holder {
   text-align: center;
   margin-top: 0;
   height: 10vh;
 }
-
 .button-holder a {
   margin-top: 0.5rem;
 }
-
 .button-holder a:hover{
   color: lightgray;
   text-decoration: none;
@@ -262,9 +258,6 @@ footer.fixed-bottom a.button:hover {
 @media only screen and (min-width: 768px) and (max-width: 992px){
     header p {
       font-size: 28px;
-    }
-    #about_text {
-      // font-size: 14px;
     }
     .project-details {
       left: 39%;
