@@ -6566,6 +6566,10 @@ h3 {
 #about_text {
   margin-left: 3.25rem; }
 
+#resume_div {
+  display: flex;
+  justify-content: center; }
+
 h5 {
   font-family: "Helvetica Neue", sans-serif, Arial;
   color: #483763;

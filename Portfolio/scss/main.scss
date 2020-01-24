@@ -93,6 +93,10 @@ h3 {
 #about_text {
   margin-left: 3.25rem;
 }
+#resume_div {
+  display: flex;
+  justify-content: center;
+}
 //Portfolio page
 h5 {
   font-family: $portfolio-font;
