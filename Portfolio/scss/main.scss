@@ -3,7 +3,7 @@
 //offset body from the fixed header. default font for header
 body {
   padding-top: 70px;
-  padding-bottom: 90px;
+  padding-bottom: 30px;
   font-family: $portfolio-font;
   font-weight: 300;
 }
@@ -22,7 +22,7 @@ header .container-fluid {
 }
 // my name in header
 header p {
-  font-size: 24px;
+  font-size: 28px;
   font-family: $portfolio-font;
   color: $blue;
   margin-top: auto;
@@ -56,8 +56,11 @@ header p {
 }
 //hamburger menu icon
 .navbar-light .navbar-toggler {
-  border-color: $purple;
+  background-color: $blue;
 }
+//hamburger menu lines
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 //page title
 h1, h3 {
   font-family: $portfolio-font;
@@ -80,23 +83,60 @@ h3 {
 //Professional headshot
 #prof_photo {
   border-radius: 50%;
-  max-height: 20rem;
+  max-height: 19rem;
   max-width: 75%;
   display: block;
   margin: 0 auto;
 }
-// vertical line between photo and text on home
+//div that houses professional photo
 #prof_photo_div {
-  border-right: 2px solid $blue;
-  height: 330px;
+  display: flex;
+  align-items: center;
 }
+// vertical line between photo and text on home
+#about_text_div {
+  border-left: 2px solid $blue;
+  // display: flex;
+  // align-items: center;
+}
+//offsetting about text from vertical line
 #about_text {
-  margin-left: 3.25rem;
+  margin-left: 2.75rem;
+  margin-bottom: 0;
 }
-#resume_div {
+//display for resume button
+#buttons_div {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+//button and link styling on home page
+.download-submit {
+  font-family: $portfolio-font;
+  font-size: 20px;
+  font-weight: 300;
+  color: $white;
+  background-color: $blue;
+  border: 1px solid $blue;
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem;
+  margin: 4rem 1.5rem 4rem 1.5rem;
+}
+//text within button for resume
+#resume-text {
+  text-align: center;
+}
+#or_text {
+  margin: 0;
+  font-size: 20px;
+}
+.download-submit:hover {
+  text-decoration: none;
+  color: white;
+  background-color: $dark-gray;
+}
+
+
 //Portfolio page
 h5 {
   font-family: $portfolio-font;
@@ -180,47 +220,6 @@ div.caption {
   text-align: center;
 }
 
-//view resume button
-.download-submit {
-  font-family: $portfolio-font;
-  font-size: 18px;
-  color: $white;
-  background-color: $blue;
-  border: 1px solid $blue;
-  border-radius: 5px;
-  padding: 0.25rem 0.5rem;
-  margin: 3rem 0;
-}
-//text within button for resume
-#resume-text {
-  text-align: center;
-}
-
-//Contact page
-.form-text {
-  color: $blue;
-  display: inline-block;
-  font-weight: bold;
-  margin-bottom: 0.25rem;
-  margin-right: 0.25rem;
-}
-form input[type=text] {
-  margin-bottom: 0.5rem;
-  width: 60vw;
-  display: block;
-}
-.button-holder {
-  text-align: center;
-  margin-top: 0;
-  height: 10vh;
-}
-.button-holder a {
-  margin-top: 0.5rem;
-}
-.button-holder a:hover{
-  color: lightgray;
-  text-decoration: none;
-}
 
 //Footer
 footer.fixed-bottom {
@@ -258,10 +257,19 @@ footer.fixed-bottom a.button:hover {
   padding: 0.45rem 0.7rem 0.45rem 0.7rem;
 }
 
-//change "Jessica Mathis" and about text to be smaller for midsize screen
+//tablet view
 @media only screen and (min-width: 768px) and (max-width: 992px){
-    header p {
-      font-size: 28px;
+    //everyone has a story heading
+    h1 {
+      margin: 0.5rem auto 1.5rem auto;
+    }
+    //about me text
+    #about_text {
+      font-size: 16px;
+    }
+    //buttons on home page
+    .download-submit {
+      margin: 2rem 1.5rem 2rem 1.5rem;
     }
     .project-details {
       left: 39%;
@@ -276,9 +284,6 @@ footer.fixed-bottom a.button:hover {
 @media only screen and (min-width: 992px){
     .project-details {
       left: 40%;
-    }
-    header p {
-      font-size: 28px;
     }
     form input[type=text] {
       display: block;

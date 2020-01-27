@@ -6492,7 +6492,7 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #ddd !important; } }
 body {
   padding-top: 70px;
-  padding-bottom: 90px;
+  padding-bottom: 30px;
   font-family: "Helvetica Neue", sans-serif, Arial;
   font-weight: 300; }
 
@@ -6507,7 +6507,7 @@ header .container-fluid {
   background-color: white; }
 
 header p {
-  font-size: 24px;
+  font-size: 28px;
   font-family: "Helvetica Neue", sans-serif, Arial;
   color: #5D64B6;
   margin-top: auto;
@@ -6535,7 +6535,10 @@ header p {
   border-radius: 4px; }
 
 .navbar-light .navbar-toggler {
-  border-color: #483763; }
+  background-color: #5D64B6; }
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 
 h1, h3 {
   font-family: "Helvetica Neue", sans-serif, Arial;
@@ -6554,21 +6557,49 @@ h3 {
 
 #prof_photo {
   border-radius: 50%;
-  max-height: 20rem;
+  max-height: 19rem;
   max-width: 75%;
   display: block;
   margin: 0 auto; }
 
 #prof_photo_div {
-  border-right: 2px solid #5D64B6;
-  height: 330px; }
+  display: flex;
+  align-items: center; }
+
+#about_text_div {
+  border-left: 2px solid #5D64B6; }
 
 #about_text {
-  margin-left: 3.25rem; }
+  margin-left: 2.75rem;
+  margin-bottom: 0; }
 
-#resume_div {
+#buttons_div {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
+
+.download-submit {
+  font-family: "Helvetica Neue", sans-serif, Arial;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+  background-color: #5D64B6;
+  border: 1px solid #5D64B6;
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem;
+  margin: 4rem 1.5rem 4rem 1.5rem; }
+
+#resume-text {
+  text-align: center; }
+
+#or_text {
+  margin: 0;
+  font-size: 20px; }
+
+.download-submit:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #404040; }
 
 h5 {
   font-family: "Helvetica Neue", sans-serif, Arial;
@@ -6641,43 +6672,6 @@ div.caption {
   margin: 0 auto;
   text-align: center; }
 
-.download-submit {
-  font-family: "Helvetica Neue", sans-serif, Arial;
-  font-size: 18px;
-  color: #fff;
-  background-color: #5D64B6;
-  border: 1px solid #5D64B6;
-  border-radius: 5px;
-  padding: 0.25rem 0.5rem;
-  margin: 3rem 0; }
-
-#resume-text {
-  text-align: center; }
-
-.form-text {
-  color: #5D64B6;
-  display: inline-block;
-  font-weight: bold;
-  margin-bottom: 0.25rem;
-  margin-right: 0.25rem; }
-
-form input[type=text] {
-  margin-bottom: 0.5rem;
-  width: 60vw;
-  display: block; }
-
-.button-holder {
-  text-align: center;
-  margin-top: 0;
-  height: 10vh; }
-
-.button-holder a {
-  margin-top: 0.5rem; }
-
-.button-holder a:hover {
-  color: lightgray;
-  text-decoration: none; }
-
 footer.fixed-bottom {
   background-color: white; }
 
@@ -6706,8 +6700,14 @@ footer.fixed-bottom a.button:hover {
   padding: 0.45rem 0.7rem 0.45rem 0.7rem; }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  header p {
-    font-size: 28px; }
+  h1 {
+    margin: 0.5rem auto 1.5rem auto; }
+
+  #about_text {
+    font-size: 16px; }
+
+  .download-submit {
+    margin: 2rem 1.5rem 2rem 1.5rem; }
 
   .project-details {
     left: 39%; }
@@ -6719,9 +6719,6 @@ footer.fixed-bottom a.button:hover {
 @media only screen and (min-width: 992px) {
   .project-details {
     left: 40%; }
-
-  header p {
-    font-size: 28px; }
 
   form input[type=text] {
     display: block;
