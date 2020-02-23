@@ -70,12 +70,13 @@ h1, h3 {
 }
 //main heading on home page
 h1 {
-  margin: 1.5rem auto 2.5rem auto;
+  margin: 0.5rem auto 0.5rem auto;
+  font-size: 3rem;
 }
 //portfolio heading
-h3 {
-  margin: 0rem auto 1.5rem auto;
-}
+// h3 {
+//   margin: 0rem auto 0.5rem auto;
+// }
 //accent word in page heading
 .accentText {
   color: $blue;
@@ -84,7 +85,7 @@ h3 {
 #prof_photo {
   border-radius: 50%;
   max-height: 19rem;
-  max-width: 75%;
+  max-width: 50%;
   display: block;
   margin: 0 auto;
 }
@@ -92,17 +93,17 @@ h3 {
 #prof_photo_div {
   display: flex;
   align-items: center;
-}
-// vertical line between photo and text on home
-#about_text_div {
-  border-left: 2px solid $blue;
-  // display: flex;
-  // align-items: center;
+  margin: 1rem auto 1.5rem auto;
 }
 //offsetting about text from vertical line
 #about_text {
-  margin-left: 2.75rem;
+  margin-left: 0;
   margin-bottom: 0;
+}
+// div that houses about text
+#about_text_div {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 //display for resume button
 #buttons_div {
@@ -120,11 +121,15 @@ h3 {
   border: 1px solid $blue;
   border-radius: 5px;
   padding: 0.25rem 0.5rem;
-  margin: 4rem 1.5rem 4rem 1.5rem;
+  margin: 1rem 10rem 1rem 10rem;
 }
 //text within button for resume
 #resume-text {
   text-align: center;
+}
+//resume button
+#resume_button {
+  margin: 1rem 9rem 1rem 9rem;
 }
 #or_text {
   margin: 0;
@@ -138,34 +143,33 @@ h3 {
 
 
 //Portfolio page
+// project titles
 h5 {
   font-family: $portfolio-font;
-  color: $purple;
+  font-weight: 300;
+  color: $dark-gray;
   display: inline-block;
-  margin: 0.35rem auto;
+  margin: 0.75rem auto 0.25rem auto;
 }
-
-//line under title
-h5:after {
-    content:' ';
-    display: block;
-    border: 0.5px solid black;
-    border-radius: 4px;
-}
-
+// my role titles
 h6 {
   font-family: $portfolio-font;
-  color: black;
+  color: $blue;
   text-align: center;
   font-weight: 400;
+  margin: 0rem auto 0.5rem auto;
 }
-
+//row that all the projects are in
+#portfolio_row {
+  margin: auto;
+  justify-content: center;
+}
 .project {
-  border: 1px solid $purple;
   background-color: $gray-200;
   text-align: center;
   box-shadow: 5px 5px 8px darkgray;
-  margin-bottom: 1.5rem;
+  margin: 1rem;
+  max-width: 60%;
 }
 
 div.caption {
@@ -183,7 +187,7 @@ div.caption {
   height: 200px;
   width: 200px;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 1rem auto;
   padding: 0.5rem;
 }
 
@@ -262,13 +266,33 @@ footer.fixed-bottom a.button:hover {
     //everyone has a story heading
     h1 {
       margin: 0.5rem auto 1.5rem auto;
+      font-size: 2.5rem;
+    }
+    //div that houses professional photo
+    #prof_photo_div {
+      margin: 0;
+    }
+    // professional headshot image
+    #prof_photo {
+      max-width: 75%;
     }
     //about me text
     #about_text {
       font-size: 16px;
+      margin-left: 2.75rem;
+    }
+    // blue line between photo and about text
+    #about_text_div {
+      border-left: 2px solid $blue;
+      padding-left: 15px;
+      padding-right: 15px;
     }
     //buttons on home page
     .download-submit {
+      margin: 2rem 1.5rem 2rem 1.5rem;
+      font-size: 18px;
+    }
+    #resume_button {
       margin: 2rem 1.5rem 2rem 1.5rem;
     }
     .project-details {
@@ -280,8 +304,39 @@ footer.fixed-bottom a.button:hover {
       margin-top: 0.5rem;
     }
 }
-//large viewport
+//large viewport - desktop view
 @media only screen and (min-width: 992px){
+// Home page
+    // everyone has a story heading
+    h1 {
+      margin: 1.5rem auto 2.5rem auto;
+    }
+    //div that houses professional photo
+    #prof_photo_div {
+      margin: 0;
+    }
+    // professional headshot image
+    #prof_photo {
+      max-width: 75%;
+    }
+    // blue line between photo and about text
+    #about_text_div {
+      border-left: 2px solid $blue;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    // about me text
+    #about_text {
+      margin-left: 2.75rem;
+    }
+    // resume and portfolio buttons
+    .download-submit {
+      margin: 4rem 1.5rem 4rem 1.5rem;
+    }
+    #resume_button {
+      margin: 4rem 1.5rem 4rem 1.5rem;
+    }
+// Portfolio page
     .project-details {
       left: 40%;
     }

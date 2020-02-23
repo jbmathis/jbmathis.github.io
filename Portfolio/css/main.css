@@ -6547,10 +6547,8 @@ h1, h3 {
   text-align: center; }
 
 h1 {
-  margin: 1.5rem auto 2.5rem auto; }
-
-h3 {
-  margin: 0rem auto 1.5rem auto; }
+  margin: 0.5rem auto 0.5rem auto;
+  font-size: 3rem; }
 
 .accentText {
   color: #5D64B6; }
@@ -6558,20 +6556,22 @@ h3 {
 #prof_photo {
   border-radius: 50%;
   max-height: 19rem;
-  max-width: 75%;
+  max-width: 50%;
   display: block;
   margin: 0 auto; }
 
 #prof_photo_div {
   display: flex;
-  align-items: center; }
-
-#about_text_div {
-  border-left: 2px solid #5D64B6; }
+  align-items: center;
+  margin: 1rem auto 1.5rem auto; }
 
 #about_text {
-  margin-left: 2.75rem;
+  margin-left: 0;
   margin-bottom: 0; }
+
+#about_text_div {
+  padding-left: 2rem;
+  padding-right: 2rem; }
 
 #buttons_div {
   display: flex;
@@ -6587,10 +6587,13 @@ h3 {
   border: 1px solid #5D64B6;
   border-radius: 5px;
   padding: 0.25rem 0.5rem;
-  margin: 4rem 1.5rem 4rem 1.5rem; }
+  margin: 1rem 10rem 1rem 10rem; }
 
 #resume-text {
   text-align: center; }
+
+#resume_button {
+  margin: 1rem 9rem 1rem 9rem; }
 
 #or_text {
   margin: 0;
@@ -6603,28 +6606,28 @@ h3 {
 
 h5 {
   font-family: "Helvetica Neue", sans-serif, Arial;
-  color: #483763;
+  font-weight: 300;
+  color: #404040;
   display: inline-block;
-  margin: 0.35rem auto; }
-
-h5:after {
-  content: ' ';
-  display: block;
-  border: 0.5px solid black;
-  border-radius: 4px; }
+  margin: 0.75rem auto 0.25rem auto; }
 
 h6 {
   font-family: "Helvetica Neue", sans-serif, Arial;
-  color: black;
+  color: #5D64B6;
   text-align: center;
-  font-weight: 400; }
+  font-weight: 400;
+  margin: 0rem auto 0.5rem auto; }
+
+#portfolio_row {
+  margin: auto;
+  justify-content: center; }
 
 .project {
-  border: 1px solid #483763;
   background-color: #e9ecef;
   text-align: center;
   box-shadow: 5px 5px 8px darkgray;
-  margin-bottom: 1.5rem; }
+  margin: 1rem;
+  max-width: 60%; }
 
 div.caption {
   font-family: "Helvetica Neue", sans-serif, Arial;
@@ -6640,7 +6643,7 @@ div.caption {
   height: 200px;
   width: 200px;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 1rem auto;
   padding: 0.5rem; }
 
 .project-details {
@@ -6701,12 +6704,29 @@ footer.fixed-bottom a.button:hover {
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   h1 {
-    margin: 0.5rem auto 1.5rem auto; }
+    margin: 0.5rem auto 1.5rem auto;
+    font-size: 2.5rem; }
+
+  #prof_photo_div {
+    margin: 0; }
+
+  #prof_photo {
+    max-width: 75%; }
 
   #about_text {
-    font-size: 16px; }
+    font-size: 16px;
+    margin-left: 2.75rem; }
+
+  #about_text_div {
+    border-left: 2px solid #5D64B6;
+    padding-left: 15px;
+    padding-right: 15px; }
 
   .download-submit {
+    margin: 2rem 1.5rem 2rem 1.5rem;
+    font-size: 18px; }
+
+  #resume_button {
     margin: 2rem 1.5rem 2rem 1.5rem; }
 
   .project-details {
@@ -6717,6 +6737,29 @@ footer.fixed-bottom a.button:hover {
     width: 40vw;
     margin-top: 0.5rem; } }
 @media only screen and (min-width: 992px) {
+  h1 {
+    margin: 1.5rem auto 2.5rem auto; }
+
+  #prof_photo_div {
+    margin: 0; }
+
+  #prof_photo {
+    max-width: 75%; }
+
+  #about_text_div {
+    border-left: 2px solid #5D64B6;
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  #about_text {
+    margin-left: 2.75rem; }
+
+  .download-submit {
+    margin: 4rem 1.5rem 4rem 1.5rem; }
+
+  #resume_button {
+    margin: 4rem 1.5rem 4rem 1.5rem; }
+
   .project-details {
     left: 40%; }
 
