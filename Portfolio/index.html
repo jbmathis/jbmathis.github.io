@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="data:;base64, iVBORw0KGgo=">
 
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
@@ -17,7 +18,7 @@
     <header class="fixed-top">
       <div class="container-fluid">
         <div class="row">
-          <p>Jessica Mathis</p>
+          <p style="cursor:pointer" onclick="location.href='index.html';">Jessica Mathis</p>
           <nav class="navbar navbar-expand-md navbar-light ml-auto">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -61,11 +62,17 @@
     </div>
     <div class="container">
       <div class="row" id="buttons_div">
-        <a class="download-submit" href="portfolio.html">View my portfolio</a>
-        <p id="or_text"> - or - </p>
-        <form id="resume-form" method="get" action="resources/Mathis_Jessica_Resume.pdf">
-          <button class="download-submit" id="resume_button" type="submit">Download my resume</button>
-        </form>
+        <div class="col-xs-10 col-md-4 col-lg-3 col-xl-2 button_column">
+          <a class="download-submit" href="portfolio.html">View my portfolio</a>
+        </div>
+        <div class="col-xs-10 col-md-2 col-lg-2 col-xl-1 button_column">
+          <pre id="or_text"> -  or  - </pre>
+        </div>
+        <div class="col-xs-10 col-md-4 col-lg-3 col-xl-2 button_column">
+          <form id="resume-form" method="get" action="resources/Mathis_Jessica_Resume.pdf">
+            <button class="download-submit" id="resume_button" type="submit">See my resume</button>
+          </form>
+        </div>
       </div>
     </div>
     <footer class="fixed-bottom">

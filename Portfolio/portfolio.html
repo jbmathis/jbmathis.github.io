@@ -14,26 +14,26 @@
     <title>Jessica Mathis Portfolio</title>
     <!-- Javascript functions -->
     <script type="text/javascript">
-      function showMore(project){
-        project.style.background = "#C4A6CF";
-        project.getElementsByTagName("img")[0].style.visibility="hidden";
-        project.getElementsByClassName('caption')[0].style.visibility="visible";
-        project.getElementsByClassName('project-details')[0].style.visibility="visible";
-      }
-
-      function unDo(project){
-        project.style.background = "#E9ECEF";
-        project.getElementsByClassName('caption')[0].style.visibility="hidden";
-        project.getElementsByTagName("img")[0].style.visibility="visible";
-        project.getElementsByClassName('project-details')[0].style.visibility="hidden";
-      }
+      // function showMore(project){
+      //   project.style.background = "#C4A6CF";
+      //   project.getElementsByTagName("img")[0].style.visibility="hidden";
+      //   project.getElementsByClassName('caption')[0].style.visibility="visible";
+      //   project.getElementsByClassName('project-details')[0].style.visibility="visible";
+      // }
+      //
+      // function unDo(project){
+      //   project.style.background = "#E9ECEF";
+      //   project.getElementsByClassName('caption')[0].style.visibility="hidden";
+      //   project.getElementsByTagName("img")[0].style.visibility="visible";
+      //   project.getElementsByClassName('project-details')[0].style.visibility="hidden";
+      // }
     </script>
   </head>
   <body>
     <header class="fixed-top">
       <div class="container-fluid">
         <div class="row">
-          <p>Jessica Mathis</p>
+          <p style="cursor:pointer" onclick="location.href='index.html';">Jessica Mathis</p>
           <nav class="navbar navbar-expand-md navbar-light ml-auto">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -56,60 +56,56 @@
     <div class="container">
       <div class="row" id="portfolio_row">
         <!-- Data Driven Detroit Project -->
-        <div class="col-xs-10 col-md-5 col-lg-3 project"
-          onmouseover = "showMore(this)" onmouseleave = "unDo(this)">
-          <h5>Data Driven Detroit Toolbox</h5>
+        <div class="col-xs-10 col-md-5 col-lg-3 project" style="cursor:pointer" onclick="location.href='project.html';">
+          <!-- if you want to add javascript back in, include onmouseover = "showMore(this)" onmouseleave = "unDo(this)" in class -->
+          <p>Data Driven Detroit Toolbox</p>
           <h6>UX Researcher and Designer</h6>
           <img src="images/Data-Driven-Detroit.jpg" class="img-fluid project-photo"
            alt="A semester-long project aimed at redesigning the toolbox
            page on Data Driven Detroit's Website.">
-           <div class="caption"><br>A semester-long capstone project aimed at redesigning the data resources
+           <!-- <div class="caption"><br>A semester-long capstone project aimed at redesigning the data resources
            page on Data Driven Detroit's Website by creating an interactive prototype.</div>
-           <a class="project-details" href="project.html">Details</a>
+           <a class="project-details" href="project.html">Details</a> -->
         </div>
         <!-- AutoMate -->
-        <div class="col-xs-10 col-md-5 col-lg-3 project"
-          onmouseover = "showMore(this)" onmouseleave = "unDo(this)">
-          <h5>AutoMate</h5>
+        <div class="col-xs-10 col-md-5 col-lg-3 project" style="cursor:pointer" onclick="location.href='project.html';">
+          <p>AutoMate</p>
           <h6>UX Designer</h6>
           <img src="images/AutoMate.jpg" class="img-fluid project-photo"
            alt="A semester-long capstone project aimed at designing an interface for an autonomous car.">
-           <div class="caption"><br>A semester-long design project aimed at designing an interface
+           <!-- <div class="caption"><br>A semester-long design project aimed at designing an interface
            for an autonomous car. The project involved ideation, storyboarding, and low/hi-fi prototyping.</div>
-           <a class="project-details" href="project.html">Details</a>
+           <a class="project-details" href="project.html">Details</a> -->
         </div>
         <!-- GM Internship -->
-        <div class="col-xs-10 col-md-5 col-lg-3 project"
-          onmouseover = "showMore(this)" onmouseleave = "unDo(this)">
-          <h5>GM Market Research Tool</h5>
+        <div class="col-xs-10 col-md-5 col-lg-3 project" style="cursor:pointer" onclick="location.href='project.html';">
+          <p>GM Market Research Tool</p>
           <h6>Summer 2017 Intern</h6>
           <img src="images/GM_Logo.png" class="img-fluid project-photo"
            alt="Summer internship at GM where I redesigned a market research tool for product managers.">
-           <div class="caption"><br>A summer-long project that involved redisigning a tool for product managers.
+           <!-- <div class="caption"><br>A summer-long project that involved redisigning a tool for product managers.
              The tool is used to assess customer satisfaction survey data.</div>
-           <a class="project-details" href="project.html">Details</a>
+           <a class="project-details" href="project.html">Details</a> -->
         </div>
         <!-- MMB Websites -->
-        <div class="col-xs-10 col-md-5 col-lg-3 project"
-          onmouseover = "showMore(this)" onmouseleave = "unDo(this)">
-          <h5>MMB Section Websites</h5>
+        <div class="col-xs-10 col-md-5 col-lg-3 project" style="cursor:pointer" onclick="location.href='project.html';">
+          <p>MMB Section Websites</p>
           <h6>Project Manager</h6>
           <img src="images/MMB.png" class="img-fluid project-photo"
            alt="A 6-month passion project where I developed new websites for the MMB sections.">
-           <div class="caption"><br>A 6-month passion project I spearheaded to develop websites for
+           <!-- <div class="caption"><br>A 6-month passion project I spearheaded to develop websites for
            each of the instrument sections in the Michigan Marching Band.</div>
-           <a class="project-details" href="project.html">Details</a>
+           <a class="project-details" href="project.html">Details</a> -->
         </div>
         <!-- MBus App -->
-        <div class="col-xs-10 col-md-5 col-lg-3 project"
-          onmouseover = "showMore(this)" onmouseleave = "unDo(this)">
-          <h5>MBus Mobile App</h5>
+        <div class="col-xs-10 col-md-5 col-lg-3 project" style="cursor:pointer" onclick="location.href='project.html';">
+          <p>MBus Mobile App</p>
           <h6>Usability Researcher</h6>
           <img src="images/MBus.png" class="img-fluid project-photo"
            alt="A semester-long research project where I conducted research on the MBus mobile app.">
-           <div class="caption"><br>A semester-long research project where I, along with a team of 3 others,
+           <!-- <div class="caption"><br>A semester-long research project where I, along with a team of 3 others,
              conducted research on the MBus mobile app to suggest improvements.</div>
-           <a class="project-details" href="project.html">Details</a>
+           <a class="project-details" href="project.html">Details</a> -->
         </div>
       </div>
     </div>

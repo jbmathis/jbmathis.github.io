@@ -6578,7 +6578,11 @@ h1 {
   justify-content: center;
   align-items: center; }
 
+.button_column {
+  text-align: center; }
+
 .download-submit {
+  display: inline-block;
   font-family: "Helvetica Neue", sans-serif, Arial;
   font-size: 20px;
   font-weight: 300;
@@ -6586,30 +6590,31 @@ h1 {
   background-color: #5D64B6;
   border: 1px solid #5D64B6;
   border-radius: 5px;
-  padding: 0.25rem 0.5rem;
-  margin: 1rem 10rem 1rem 10rem; }
+  padding: 0.5rem;
+  margin: 2rem 0rem; }
 
 #resume-text {
   text-align: center; }
 
-#resume_button {
-  margin: 1rem 9rem 1rem 9rem; }
-
 #or_text {
   margin: 0;
-  font-size: 20px; }
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #404040; }
 
 .download-submit:hover {
   text-decoration: none;
   color: white;
   background-color: #404040; }
 
-h5 {
+.project p {
   font-family: "Helvetica Neue", sans-serif, Arial;
+  font-size: 1.25rem;
   font-weight: 300;
   color: #404040;
+  text-decoration: none;
   display: inline-block;
-  margin: 0.75rem auto 0.25rem auto; }
+  margin: 0.5rem auto 0rem auto; }
 
 h6 {
   font-family: "Helvetica Neue", sans-serif, Arial;
@@ -6720,22 +6725,7 @@ footer.fixed-bottom a.button:hover {
   #about_text_div {
     border-left: 2px solid #5D64B6;
     padding-left: 15px;
-    padding-right: 15px; }
-
-  .download-submit {
-    margin: 2rem 1.5rem 2rem 1.5rem;
-    font-size: 18px; }
-
-  #resume_button {
-    margin: 2rem 1.5rem 2rem 1.5rem; }
-
-  .project-details {
-    left: 39%; }
-
-  form input[type=text] {
-    display: inline;
-    width: 40vw;
-    margin-top: 0.5rem; } }
+    padding-right: 15px; } }
 @media only screen and (min-width: 992px) {
   h1 {
     margin: 1.5rem auto 2.5rem auto; }
@@ -6752,20 +6742,6 @@ footer.fixed-bottom a.button:hover {
     padding-right: 15px; }
 
   #about_text {
-    margin-left: 2.75rem; }
-
-  .download-submit {
-    margin: 4rem 1.5rem 4rem 1.5rem; }
-
-  #resume_button {
-    margin: 4rem 1.5rem 4rem 1.5rem; }
-
-  .project-details {
-    left: 40%; }
-
-  form input[type=text] {
-    display: block;
-    width: 40vw;
-    margin-top: 0.05rem; } }
+    margin-left: 2.75rem; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -73,10 +73,7 @@ h1 {
   margin: 0.5rem auto 0.5rem auto;
   font-size: 3rem;
 }
-//portfolio heading
-// h3 {
-//   margin: 0rem auto 0.5rem auto;
-// }
+
 //accent word in page heading
 .accentText {
   color: $blue;
@@ -105,14 +102,19 @@ h1 {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-//display for resume button
+//display for home page buttons
 #buttons_div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+//columns for buttons on home page
+.button_column {
+  text-align: center;
+}
 //button and link styling on home page
 .download-submit {
+  display: inline-block;
   font-family: $portfolio-font;
   font-size: 20px;
   font-weight: 300;
@@ -120,20 +122,19 @@ h1 {
   background-color: $blue;
   border: 1px solid $blue;
   border-radius: 5px;
-  padding: 0.25rem 0.5rem;
-  margin: 1rem 10rem 1rem 10rem;
+  padding: 0.5rem;
+  margin: 2rem 0rem;
 }
 //text within button for resume
 #resume-text {
   text-align: center;
 }
-//resume button
-#resume_button {
-  margin: 1rem 9rem 1rem 9rem;
-}
+// or in between two buttons on home page
 #or_text {
   margin: 0;
   font-size: 20px;
+  font-family: sans-serif;
+  color: $dark-gray;
 }
 .download-submit:hover {
   text-decoration: none;
@@ -143,14 +144,18 @@ h1 {
 
 
 //Portfolio page
+
 // project titles
-h5 {
+.project p {
   font-family: $portfolio-font;
+  font-size: 1.25rem;
   font-weight: 300;
   color: $dark-gray;
+  text-decoration: none;
   display: inline-block;
-  margin: 0.75rem auto 0.25rem auto;
+  margin: 0.5rem auto 0rem auto;
 }
+
 // my role titles
 h6 {
   font-family: $portfolio-font;
@@ -287,23 +292,8 @@ footer.fixed-bottom a.button:hover {
       padding-left: 15px;
       padding-right: 15px;
     }
-    //buttons on home page
-    .download-submit {
-      margin: 2rem 1.5rem 2rem 1.5rem;
-      font-size: 18px;
-    }
-    #resume_button {
-      margin: 2rem 1.5rem 2rem 1.5rem;
-    }
-    .project-details {
-      left: 39%;
-    }
-    form input[type=text] {
-      display: inline;
-      width: 40vw;
-      margin-top: 0.5rem;
-    }
 }
+
 //large viewport - desktop view
 @media only screen and (min-width: 992px){
 // Home page
@@ -329,20 +319,5 @@ footer.fixed-bottom a.button:hover {
     #about_text {
       margin-left: 2.75rem;
     }
-    // resume and portfolio buttons
-    .download-submit {
-      margin: 4rem 1.5rem 4rem 1.5rem;
-    }
-    #resume_button {
-      margin: 4rem 1.5rem 4rem 1.5rem;
-    }
-// Portfolio page
-    .project-details {
-      left: 40%;
-    }
-    form input[type=text] {
-      display: block;
-      width: 40vw;
-      margin-top: 0.05rem;
-    }
+
 }
