@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="data:;base64, iVBORw0KGgo=">
 
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
@@ -17,7 +18,7 @@
     <header class="fixed-top">
       <div class="container-fluid">
         <div class="row">
-          <p><b>Jessica Mathis</b></p>
+          <p style="cursor:pointer" onclick="location.href='index.html';">Jessica Mathis</p>
           <nav class="navbar navbar-expand-md navbar-light ml-auto">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -31,36 +32,57 @@
                   <span class="nav-text">Portfolio</span>
                   <span class="sr-only">(current)</span>
                 </a>
-                <a class="nav-item nav-link" href="#">About Me</a>
               </div>
             </div>
           </nav>
         </div>
       </div>
     </header>
-    <h1>Sorry, this page is under construction</h1>
-    <a id="back" href="portfolio.html" alt="Click to Go Back to the Portfolio">Back to Portfolio</a>
+    <div class="container">
+      <!-- Project Header -->
+      <div class="row" id="centered_row">
+        <div class="col-lg-8 project-header-div">
+          <span class="project-header">AutoMate</span>
+        </div>
+      </div>
+      <div class="row" id="centered_row">
+        <div class="col-8 col-sm-8 col-md-6 col-lg-4 project-header-div">
+          <img src="images/AutoMate.jpg" class="img-fluid" alt="Hi-Fi prototype of AutoMate design">
+        </div>
+      </div>
+      <div class="row" id="centered_row">
+        <div class="col-lg-6 project-header-div">
+          <span class="project-subheader"><span class="bold-accent-text">Date:</span>
+          September - December 2017 <br><span class="bold-accent-text">Work Environment:</span>
+           Team of Five<br><span class="bold-accent-text">Role:</span> UX Designer</span>
+        </div>
+      </div>
+      <!-- Project Content -->
+      <div class="row">
+        <div class="col-12">
+          <p class="project-section-title">Summary</p>
+          <p class="project-section-details">The purpose of this semester-long project was to design an interface for the inside of
+            an autonomous car. It is apparent that the transportation industry is moving towards
+            autonomous technology, but the front-facing interface poses novel issues, one of which
+            being convincing people to trust this technology to drive for them. With AutoMate, we
+            created an interface that features augmented reality and obstacle detection technology
+            in an attempt to foster trust between passenger and car.</p>
+        </div>
+      </div>
+    </div>
+
     <footer class="fixed-bottom">
       <div class="container-fluid">
         <div class="row">
-          <span>
-            <a id="email" class="button" href="contact.html" alt="Contact me through email">
-              <i class="far fa-envelope"></i>
-            </a>
-            <a id="LinkedIn" class="button" href="https://www.linkedin.com/in/jessica-mathis/" alt="Link to Jessica Mathis' LinkedIn Page">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </span>
-        </div>
-        <div class="row">
-          <p><i class="far fa-copyright"></i> Jessica Mathis 2018</p>
+          <p>&copy Jessica Mathis 2020</p>
         </div>
       </div>
     </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </body>
-    </html>
+  </body>
+</html>

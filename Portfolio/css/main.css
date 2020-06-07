@@ -6550,7 +6550,7 @@ h1 {
   margin: 0.5rem auto 0.5rem auto;
   font-size: 3rem; }
 
-.accentText {
+.accent-text {
   color: #5D64B6; }
 
 #prof_photo {
@@ -6578,7 +6578,7 @@ h1 {
   justify-content: center;
   align-items: center; }
 
-.button_column {
+.button-column {
   text-align: center; }
 
 .download-submit {
@@ -6592,9 +6592,6 @@ h1 {
   border-radius: 5px;
   padding: 0.5rem;
   margin: 2rem 0rem; }
-
-#resume-text {
-  text-align: center; }
 
 #or_text {
   margin: 0;
@@ -6623,7 +6620,7 @@ h6 {
   font-weight: 400;
   margin: 0rem auto 0.5rem auto; }
 
-#portfolio_row {
+#centered_row {
   margin: auto;
   justify-content: center; }
 
@@ -6634,16 +6631,6 @@ h6 {
   margin: 1rem;
   max-width: 60%; }
 
-div.caption {
-  font-family: "Helvetica Neue", sans-serif, Arial;
-  font-size: 14px;
-  font-weight: 350;
-  visibility: hidden;
-  position: absolute;
-  padding: 0 0.25rem;
-  top: 25%;
-  right: 0.5%; }
-
 .project-photo {
   height: 200px;
   width: 200px;
@@ -6651,22 +6638,31 @@ div.caption {
   margin: 0 auto 1rem auto;
   padding: 0.5rem; }
 
-.project-details {
-  visibility: hidden;
-  font-family: "Helvetica Neue", sans-serif, Arial;
-  color: #483763;
-  background-color: white;
-  border: 1px solid #483763;
-  border-radius: 5px;
-  padding: 0.25rem 0.5rem;
-  position: absolute;
-  top: 80%;
-  left: 43.5%; }
+.project-header {
+  font-size: 30px;
+  color: #404040; }
 
-.project-details:hover {
-  text-decoration: none;
-  color: #483763;
-  background-color: lightgray; }
+.project-header-div {
+  text-align: center;
+  margin-top: 0.5rem; }
+
+.project-subheader {
+  font-size: 18px;
+  color: #404040; }
+
+.bold-accent-text {
+  color: #5D64B6;
+  font-weight: normal; }
+
+.project-section-title {
+  font-size: 26px;
+  border-bottom: 2px solid #5D64B6;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem; }
+
+.project-section-details {
+  font-size: 16px;
+  margin-bottom: 0rem; }
 
 #back {
   font-family: "Helvetica Neue", sans-serif, Arial;

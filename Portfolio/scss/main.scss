@@ -75,7 +75,7 @@ h1 {
 }
 
 //accent word in page heading
-.accentText {
+.accent-text {
   color: $blue;
 }
 //Professional headshot
@@ -109,7 +109,7 @@ h1 {
   align-items: center;
 }
 //columns for buttons on home page
-.button_column {
+.button-column {
   text-align: center;
 }
 //button and link styling on home page
@@ -124,10 +124,6 @@ h1 {
   border-radius: 5px;
   padding: 0.5rem;
   margin: 2rem 0rem;
-}
-//text within button for resume
-#resume-text {
-  text-align: center;
 }
 // or in between two buttons on home page
 #or_text {
@@ -155,7 +151,6 @@ h1 {
   display: inline-block;
   margin: 0.5rem auto 0rem auto;
 }
-
 // my role titles
 h6 {
   font-family: $portfolio-font;
@@ -165,7 +160,7 @@ h6 {
   margin: 0rem auto 0.5rem auto;
 }
 //row that all the projects are in
-#portfolio_row {
+#centered_row {
   margin: auto;
   justify-content: center;
 }
@@ -176,18 +171,7 @@ h6 {
   margin: 1rem;
   max-width: 60%;
 }
-
-div.caption {
-  font-family: $portfolio-font;
-  font-size: 14px;
-  font-weight: 350;
-  visibility: hidden;
-  position: absolute;
-  padding: 0 0.25rem;
-  top: 25%;
-  right: 0.5%;
-}
-
+//photos for projects
 .project-photo {
   height: 200px;
   width: 200px;
@@ -196,26 +180,41 @@ div.caption {
   padding: 0.5rem;
 }
 
-.project-details {
-  visibility: hidden;
-  font-family: $portfolio-font;
-  color: $purple;
-  background-color: white;
-  border: 1px solid $purple;
-  border-radius: 5px;
-  padding: 0.25rem 0.5rem;
-  position: absolute;
-  top: 80%;
-  left: 43.5%;
-}
 
-.project-details:hover {
-  text-decoration: none;
-  color: $purple;
-  background-color: lightgray;
-}
+//Project Pages
 
-//project pages
+//title of project
+.project-header {
+  font-size: 30px;
+  color: $dark-gray;
+}
+//divs to hold content within center like title and photo
+.project-header-div {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+//date, role, work environment info
+.project-subheader {
+  font-size: 18px;
+  color: $dark-gray;
+}
+//accent text for date, role, work environment
+.bold-accent-text {
+  color: $blue;
+  font-weight: normal;
+}
+//titles for sections on project page
+.project-section-title {
+  font-size: 26px;
+  border-bottom: 2px solid $blue;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+//text for sections on project page
+.project-section-details {
+  font-size: 16px;
+  margin-bottom: 0rem;
+}
 #back {
   font-family: $portfolio-font;
   color: $purple;
