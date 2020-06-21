@@ -202,6 +202,7 @@ h6 {
 .bold-accent-text {
   color: $blue;
   font-weight: normal;
+  margin: 0;
 }
 //titles for sections on project page
 .project-section-title {
@@ -214,6 +215,15 @@ h6 {
 .project-section-details {
   font-size: 16px;
   margin-bottom: 0rem;
+}
+// button to view the section websites
+#section_website_button {
+  margin-bottom: 0;
+}
+// sections that show the mmb website features
+.mmb-feature{
+  text-align: center;
+  margin: 1rem;
 }
 #back {
   font-family: $portfolio-font;
