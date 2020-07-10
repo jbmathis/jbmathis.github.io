@@ -6684,6 +6684,15 @@ h6 {
   margin: 0 auto;
   text-align: center; }
 
+.photo-border {
+  border: 1px solid #9e9e9e; }
+
+.target-users {
+  border: 1px solid #9e9e9e;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 25px; }
+
 footer.fixed-bottom {
   background-color: white; }
 
