@@ -6665,8 +6665,11 @@ h6 {
   font-size: 16px;
   margin-bottom: 0rem; }
 
-#section_website_button {
+.button_within_text {
   margin-bottom: 0; }
+
+#Automate_Design_Video {
+  display: none; }
 
 .picture-feature {
   text-align: center;
@@ -6755,6 +6758,13 @@ footer.fixed-bottom a.button:hover {
     padding-right: 15px; }
 
   #about_text {
-    margin-left: 2.75rem; } }
+    margin-left: 2.75rem; }
+
+  #Automate_Design_Link {
+    display: none; }
+
+  #Automate_Design_Video {
+    display: inherit;
+    margin-top: 1rem; } }
 
 /*# sourceMappingURL=main.css.map */
