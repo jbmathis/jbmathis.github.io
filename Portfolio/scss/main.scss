@@ -17,7 +17,6 @@ p {
 header .container-fluid {
   padding-top: 2px;
   padding-left: 20px;
-  // border-bottom: 1px solid $blue;
   background-color: white;
 }
 // my name in header
@@ -61,17 +60,18 @@ header p {
 //hamburger menu lines
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+
 //page title
-h1, h3 {
+.heading {
   font-family: $portfolio-font;
   font-weight: 300;
   color: $dark-gray;
   text-align: center;
 }
 //main heading on home page
-h1 {
+#main_heading {
   margin: 0.5rem auto 0.5rem auto;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 //accent word in page heading
@@ -152,8 +152,9 @@ h1 {
   margin: 0.5rem auto 0rem auto;
 }
 // my role titles
-h6 {
+#role {
   font-family: $portfolio-font;
+  font-size: 1rem;
   color: $blue;
   text-align: center;
   font-weight: 400;
@@ -293,7 +294,7 @@ footer.fixed-bottom a.button:hover {
 //tablet view
 @media only screen and (min-width: 768px) and (max-width: 992px){
     //everyone has a story heading
-    h1 {
+    #main_heading {
       margin: 0.5rem auto 1.5rem auto;
       font-size: 2.5rem;
     }
@@ -322,7 +323,7 @@ footer.fixed-bottom a.button:hover {
 @media only screen and (min-width: 992px){
 // Home page
     // everyone has a story heading
-    h1 {
+    #main_heading {
       margin: 1.5rem auto 2.5rem auto;
     }
     //div that houses professional photo
@@ -342,6 +343,10 @@ footer.fixed-bottom a.button:hover {
     // about me text
     #about_text {
       margin-left: 2.75rem;
+    }
+    //div that holds buttons and 'or' text
+    #buttons_div {
+      margin: 2.5rem 0rem 1rem 0rem;
     }
     #Automate_Design_Link {
       display: none;
