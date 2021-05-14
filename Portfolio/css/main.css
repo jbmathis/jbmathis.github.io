@@ -6591,7 +6591,7 @@ header p {
   border: 1px solid #5D64B6;
   border-radius: 5px;
   padding: 0.5rem;
-  margin: 2rem 0rem; }
+  margin: 1.5rem 0rem; }
 
 #or_text {
   margin: 0;
@@ -6733,11 +6733,11 @@ footer.fixed-bottom a.button:hover {
     margin: 0; }
 
   #prof_photo {
-    max-width: 75%; }
+    max-width: 90%; }
 
   #about_text {
     font-size: 16px;
-    margin-left: 2.75rem; }
+    margin-left: 1rem; }
 
   #about_text_div {
     border-left: 2px solid #5D64B6;
